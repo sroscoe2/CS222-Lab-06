@@ -6,21 +6,23 @@ In this lab, you will implement some more advanced linked list operations, union
 
 # Instructions
 
-1. Clone this lab from Github. Use this link: <https://github.com/sroscoe2/CS222-Lab-06.git> Refer to Lab 1 if you need a refresher for how to do so. If possible: when importing, name your folder `firstnameLI-CS222-Lab-06`
+1. Clone this lab from Github. Use this link: <https://github.com/sroscoe2/CS222-Lab-06.git> Refer to Lab 1 if you need a refresher for how to do so. If possible: when importing, name your folder `firstnameLI-partnerfirstnameLI-CS222-Lab-06`
+
+2. Decide who among you and your partner(s) will be the driver and navigator for this assignment.
 
 ## LL.java
 
-2. Open `LL.java`. Most of the class has been defined for you, with some additional methods not discussed in class. Review this class to familiarize yourself with the new methods. **Write what is new in a multi-line comment at the top of the LL class**
+3. Open the project. Review each code file. Discuss with your partner: what is the purpose of each file?
 
-3. [Explanation](#union) [Hints](#union-hints) Implement `union()`.
+4. [Explanation](#union) [Hints](#union-hints) Implement `union()`.
 
-4. [Explanation](#intersection) [Hints](#intersection-hints) Implement `intersect()`.
+5. [Explanation](#intersection) [Hints](#intersection-hints) Implement `intersect()`.
 
-5. Run the JUnit tests in `ComputerListTests.java` and ensure all test cases pass.
+6. Run the JUnit tests in `ComputerListTests.java` and ensure all test cases pass.
 
 ## Finishing Up
 
-6. [Explanation](#turning-in) Zip your project folder and turn it in to Canvas.
+7. Zip your project folder and turn it in to Canvas.
 
 # Explanations
 
@@ -48,6 +50,14 @@ B = [5, 6, 7, 8]
 A union B = [1, 5, 6, 7, 8]
 ```
 
+### Union Notes
+
+Typically, we perform the union operation on *sets*, a mathematical structure denoted with curly brackets `{ }`, which do not allow duplicates. So the set `A = {1,1}` would actually be `A = {1}`, since the duplicates are ignored. 
+
+Additionally, sets ignore the order of elements. So the sets `{1,2,3}` and `{2,3,1}` are equivalent. 
+
+In our implementation, we are working with lists, which both have an enforced order and allow duplicates. You will not be given any lists with duplicates. The test cases have been written so that whatever order you have enforced in the union operation, if the appropriate elements are there you will pass the test. 
+
 [Go back to the instructions](#lljava)
 
 ### Union Hints
@@ -59,8 +69,6 @@ Your job is to modify the `LL<T>` class, by computing the **union** of `this` li
 1. **Draw pictures.** Drawing pictures is an essential component for learning these topics. For every picture you draw relevant to this lab, I will give you 1 pt extra credit.
 2. You might want to iterate through `b` to find any elements not found in `this`.
 3. `find()` is your friend!
-
-*Note:* In actuality, doing the union of a set containing duplicates would remove the duplicates. Such as `A = [1, 1]`, `A union A = [1]`. However, this is a more difficult problem, so for now you do not have to consider this case.
 
 [Go back to the instructions](#lljava)
 
@@ -88,6 +96,8 @@ B = [5, 6, 7, 8]
 A intersect B = []
 ```
 
+Similar caveats for union apply to intersections. The tests are written to accept any order the list is in. 
+
 [Go back to the instructions](#lljava)
 
 ### Intersection Hints
@@ -105,12 +115,3 @@ Any elements not in both `b` and `this` should be removed from `this`.
 
 [Go back to the instructions](#lljava)
 
-## Turning In
-
-Zip your entire project file and submit the zip file to Canvas. To aid in grading, please name or re-name your project folder & zip file `firstnameLI-CS222-Lab-06.zip`
-
-Since my first name is Sarah and my last initial (I only have one, add more as needed) is R, my lab would be named `sarahR-CS222-Lab-06`.
-
-Thanks for your cooperation, this helps cut down on grading time!
-
-[Go back to the instructions](#finishing-up)
