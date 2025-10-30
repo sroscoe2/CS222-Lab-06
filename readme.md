@@ -22,14 +22,14 @@ Follow the instructions to implement each missing methods.
 2. [About Linked Lists](#explanations)  Decide what the field(s) for your class should be. Declare the head of your list as a field. Do you want to store the size as a field? Decide as a team.
 3. [Implementation Explanation](#implementation) Implement each method of the UML diagram in the theoretical manner discussed in class. [Hints](#hints)
 
-- [OPTIONAL] `getComputerNode(int position)`, which returns a `ComputerNode` -ement corresponding to the given `position`. This is optional, but may help -u with other methods.
-- `addToEnd(Computer c)`, which adds the given `Computer` instance to the end - the list.
-- `addToStart(Computer c)`, which adds the given `Computer` instance to the -ginning of the list.
-- `clear()`, which clears out the contents of the list and makes it an empty -st.
-- `getComputer(int position)`, which returns the `Computer` element stored at -e given `position`.
-- `getSize()`, which returns the size of the list, the number of elements -rrectly stored in it.
+- [OPTIONAL] `getComputerNode(int position)`, which returns a `ComputerNode` element corresponding to the given `position`. This is optional, but may help you with other methods.
+- `addToEnd(Computer c)`, which adds the given `Computer` instance to the end of the list.
+- `addToStart(Computer c)`, which adds the given `Computer` instance to the beginning of the list.
+- `clear()`, which clears out the contents of the list and makes it an empty list.
+- `getComputer(int position)`, which returns the `Computer` element stored at the given `position`.
+- `getSize()`, which returns the size of the list, the number of elements correctly stored in it.
 - `print()`, which prints the contents of the list to standard output.
-- `remove(int position)`, which removes the `Computer` from the given -osition`, assuming indices start at 0. Implicitly, the remaining elements' -dices are reduced.
+- `remove(int position)`, which removes the `Computer` from the given position`, assuming indices start at 0. Implicitly, the remaining elements' -dices are reduced.
 - Constructor `ComputerList(params)`
 
 4. Once all methods are implemented, run the JUnit test case suite. Debug any errors until all test cases pass.
